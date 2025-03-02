@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            background-color: #f0f8ff; 
+            background-image: url('C:\Users\VivoBook\Downloads\videoframe_3971.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+   
+        header {
+            background: linear-gradient(to bottom, #1f4772, #025a8a); /* Gradient from dark slate blue to slate blue */
+            color: #fff;
+            padding: 10px 0;
+            text-align:justify;
+        }
+
+        /* Circle hover effect for profile picture */
+        .circle-hover {
+            width: 120px;
+            height: 120px; 
+            border-radius: 80%; 
+            overflow: hidden;
+            margin-left: 10px; 
+            transition: transform 0.20s ease; 
+            display: inline-block; 
+        }
+
+        .circle-hover img {
+            width: 110%; 
+            height: auto;
+        }
+
+        .circle-hover:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+        }
+
+        /* Text effects for the header */
+        h1 {
+            display: inline;
+            font-size: 2.5em; 
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(79, 105, 179, 0.173); 
+            animation: glow 1.5s infinite alternate; 
+        }
+
+        /* Keyframes for the glow effect */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px rgb(56, 21, 182), 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        /* Centering the navigation links */
+        nav {
+            margin-top: 10px; /* Space above the navigation */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0; 
+            display: flex;
+            justify-content: center; 
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Space between links */
+        }
+
+        nav ul li a {
+            color: #fff; /* White color for links */
+            text-decoration: none;
+            font-size: 1.2em; /* Adjust font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <h1>Joseph Portfolio</h1>
+        <div class="circle-hover">
+            <img src="C:\Users\VivoBook\Downloads\josep.jpg" alt="Profile Picture">
+        </div>
+    </header>
+
+    <section id="about" class="hover-box">
+        <h2>About Me</h2>
+        <p><strong>Name:</strong> Joseph Paduga</p>
+        <p><strong>Professional Background:</strong> have experience working with various technologies, including HTML, CSS and JavaScript.</p>
+        <p><strong>Interests:</strong> I love creating website that very useful to the user.</p>
+        <p><strong>Goals:</strong> to be a successful software engineer and a web developer.</p>
+    </section>
+
+    <section id="hobbies" class="hover-box">
+        <h2>My Hobbies</h2>
+        <div class="project-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Playing Games </h3>
+                </div>
+                <div class="card-back">
+                    <h3>I love playing games in my  free time</h3>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Watching Movies</h3>
+                </div>
+                <div class="card-back">
+                    <h3>I like watching movies in every saturday nights</h3>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Basketball</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Masarap mag laro lalo na't pustahan</h3>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Game Designing</h3>
+                </div>
+                <div class="card-back">
+                    <h3>I'm interested in Game so that's why this is also my hobbies</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="hover-box">
+        <h2>Skills</h2>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+            <span class="percentage">90%</span>
+        </div>
+        <div class="skill">
+            <span>CSS</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;"></div>
+            </div>
+            <span class="percentage">85%</span>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+            <span class="percentage">80%</span>
+        </div>
+        <div class="skill">
+            <span>React</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+            <span class="percentage">75%</span>
+        </div>
+        <div class="skill">
+            <span>Node.js</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <span class="percentage">70%</span>
+        </div>
+    </section>
+
+    <section id="contact" class="hover-box">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Joseph Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
